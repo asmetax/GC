@@ -1,0 +1,825 @@
+@media (max-width: 320px)
+	.products-block__buttons .button 
+  font-size: 12px
+@media (max-width: 576px)
+	.hide-mobile
+		display: none!important
+	.header
+		margin-top: 0
+		&-logo
+			background: $active-color url(../img/header-logo-mobile.png) center no-repeat
+			width: 35px
+			height: 35px	
+			border-radius: 5px
+			margin-left: 40px
+		&-contacts
+			display: flex
+			flex-flow: row wrap
+			&__phone
+				font-size: 14px
+				margin-right: 0
+				&-bold
+					font-weight: bold
+				&s
+					flex-flow: column wrap
+					margin-right: 13px
+				&:first-child
+					border-right: none
+					padding-right: 0
+			&__button
+				padding: 7px
+	.main
+		text-align: center
+		&-text
+			&__title
+				margin-bottom: 10px
+				color: $active-color
+				font-size: 22px
+				font-weight: 700
+			&__subtitle
+				margin-bottom: 40px
+				font-size: 18px
+				font-weight: 400
+			&__form
+				background-color: transparent
+				padding: 0
+		&-slide-1
+			margin-top: 50px
+			padding: 50px 0 58px 0
+		&-slide-2
+			margin-top: 50px
+			padding: 50px 0 58px 0
+	.form
+		flex-flow: column wrap
+		align-items: center
+		&-title
+			font-size: 15px
+			font-weight: 300
+			line-height: 18px
+			&__important
+				font-weight: 700
+				text-transform: uppercase
+		&-small
+			font-size: 13px
+			font-weight: 300
+			margin-left: 0
+		&__input
+			width: 290px
+			margin-right: 0
+			margin-bottom: 13px
+			&::placeholder
+				text-align: center
+				font-size: 13px
+		&-title
+			padding-right: 0
+	.features
+		padding: 24px 0 10px 0
+	.numbers
+		padding: 0
+		margin-bottom: 0
+		&-block
+			margin-bottom: 24px
+			&__title
+				font-size: 30px
+			&__text
+				font-size: 14px
+				font-weight: 400
+	.advantages
+		&-block
+			display: block
+			width: 100%
+			padding: 20px 20px
+	.products
+		padding: 32px 0 43px 0
+		&-block
+			&__img
+				img
+					max-width: 90%
+			&__title				
+				text-align: center				
+		&-block
+			flex-flow: column wrap
+			align-items: center
+			&__wrap
+			&__title
+			&__buttons
+				& .button
+					padding: 15px 22px
+					font-size: 14px
+					font-weight: 400
+				& .button-o
+					margin-right: 11px
+	.offer
+		padding: 50px 0
+		&__title
+			font-size: 20px
+		&__subtitle
+			font-size: 16px
+		label
+			font-size: 14px
+			font-weight: 300
+		&-form
+			input
+				width: 290px
+	.production
+		padding: 28px 0 56px 0
+		text-align: center
+		& .container-fluid
+			padding: 0
+		&-slider_bottom
+			// height: 300px
+			img 
+				width: auto
+    // margin: 0 25px
+		&-descr
+			margin: 0
+			&__title
+				display: none
+				margin: 0 auto
+				&-mob
+					display: block
+			&__text
+				text-align: justify
+				text-align-last: center
+				// padding: 0 20px
+	.slider-prod
+		&-arrow
+			&_right
+				right: 5%
+			&_left
+				left: 5%
+	.clients
+		// margin: 0 auto
+		padding: 0 0 50px 0
+		&-block
+			flex-flow: row wrap
+			justify-content: center
+			& div:nth-child(2n+2)
+				margin-right: 0px
+			&__img
+				margin-bottom: 5px
+				margin-right: 7px
+				display: flex
+				justify-content: center
+				align-items: center
+				flex-basis: 48.7%
+				height: 87px
+				width: 140px
+				img
+					min-width: 100%
+				&-1
+					filter: grayscale(0%)
+					background-size: contain
+				&-2
+					filter: grayscale(0%)
+					background-size: contain
+				&-3
+					filter: grayscale(0%)
+					background-size: contain
+				&-4
+					filter: grayscale(0%)
+					background-size: contain
+				&-5
+					filter: grayscale(0%)
+					background-size: contain
+				&-6
+					filter: grayscale(0%)
+					background-size: contain
+				&-7
+					filter: grayscale(0%)
+					background-size: contain
+				&-8
+					filter: grayscale(0%)
+					background-size: contain
+				&-9
+					filter: grayscale(0%)
+					background-size: contain
+				&-10
+					filter: grayscale(0%)
+					background-size: contain
+				&-11
+					filter: grayscale(0%)
+					background-size: contain
+				&-12
+					filter: grayscale(0%)
+					background-size: contain
+	.feedback
+		padding: 40px 0
+		&-slider
+			width: 100%
+			margin: 0 auto
+	.section-title
+		font-size: 22px
+		&::after
+			display: none
+	.overlay 
+		.popup
+			top: 5%
+			width: 85%
+			&-title
+				font-size: 14px
+			&-form
+				padding: 10px
+				&-header
+					font-size: 20px
+					span
+						display: block
+						font-size: 16px
+				&__label
+					display: block
+					margin-top: 10px
+				&__input
+					width: 80%
+					margin-bottom: 10px
+				&__btn
+					margin-left: 0
+	.fixed-mobile
+		position: fixed
+		top: 0
+		width: 100%
+		z-index: 200
+		background-color: #fff
+	.top-nav
+		display: none
+		background-color: $text-color-dark
+		height: calc(100vh - 66px)
+		width: 100%
+	 margin: 0
+	 position: fixed
+	 top: 66px
+	 width: 100%
+	 & .container
+	 	height: 100%
+		&__list
+			display: flex
+			justify-content: space-around
+			flex-flow: column wrap
+			padding: 0
+			height: 100%
+		&__item
+			border-right: none
+			padding-right: 0
+			list-style: none
+			text-align: center
+			&:hover
+				background-color: rgba(#fff, 0.3)
+			a
+				color: $text-color-light
+				text-decoration: none
+				text-transform: uppercase
+				font-size: 12px
+				font-weight: 400
+				transition: all 0.5s
+				&:hover
+					color: $active-color
+	.contacts-block
+		position: relative
+		width: 100%
+		top: 0
+		left: 0
+		border: none
+		text-align: center
+		padding: 36px 0 28px 0
+		&__title
+			margin-bottom: 10px
+		& .section-title
+			display: block
+			font-size: 22px
+			font-weight: 700
+			margin-top: 0
+			margin-bottom: 19px
+		&__address
+			margin-bottom: 22px
+		&__email
+			margin-top: 21px
+			& .contacts-block__text
+				margin-bottom: 0
+		&__address, &__tel, &__email
+			&:before
+				display: none
+	#map
+		height: 420px
+		padding: 0 15px 14px 15px
+	.slider-fb-arrow
+		z-index: 100
+		position: absolute
+		display: block
+		width: 22px
+		height: 80px
+		cursor: pointer
+		top: calc(380px / 2 - 40px)
+		&_left
+			left: 10px
+			background: $active-color url('../img/ar-left.png') center no-repeat
+		&_right
+			right: 10px
+			background: $active-color url('../img/ar-right.png') center no-repeat
+	.footer
+		&-text
+			font-size: 11px
+@media (min-width: 577px) and (max-width: 778px)
+	.hide-mobile
+		display: none!important
+	.mobile-nav
+		margin-top: 10px
+	.header
+		margin-top: 0
+		&-logo
+			margin-left: 35px
+		&-contacts
+			display: flex
+			flex-flow: row wrap
+			&__phone
+				font-size: 20px
+				margin-right: 0
+				&-bold
+					font-weight: bold
+				&s
+					flex-flow: column wrap
+					margin-right: 30px
+				&:first-child
+					border-right: none
+					padding-right: 0
+	.main
+		text-align: center
+		&-text
+			&__title
+				margin-bottom: 10px
+				font-size: 24px
+				font-weight: 700
+			&__subtitle
+				margin-bottom: 40px
+				font-size: 24px
+				font-weight: 400
+			&__form
+				text-align: center
+				padding: 10px
+		&-slide-1
+			margin-top: 65px
+			padding: 25px 0 50px 0
+		&-slide-2
+			margin-top: 65px
+			padding: 25px 0 50px 0
+	.form
+		flex-flow: column wrap
+		align-items: center
+		&-title
+			padding: 15px
+			font-size: 20px
+			font-weight: 300
+			line-height: 20px
+			&__important
+				margin-top: 30px
+				font-weight: 700
+				text-transform: uppercase
+		&-small
+			font-size: 13px
+			font-weight: 300
+			margin-left: 0
+		&__input
+			width: 290px
+			margin-right: 0
+			margin-bottom: 13px
+			&::placeholder
+				text-align: center
+				font-size: 13px
+		&-title
+			padding-right: 0
+	.advantages
+		&-row
+		&-block
+			display: block
+			width: 100%
+			padding: 20px 30px
+	.feedback
+		&-slider
+			width: 100%	
+	.products
+		padding: 32px 0 43px 0
+		&-block
+			&__img
+				img
+					max-width: 90%
+			&__title				
+				text-align: center	
+		&-block
+			flex-flow: column wrap
+			align-items: center
+	.production
+		padding-top: 25px
+		padding-bottom: 25px
+		& .container-fluid
+			padding: 0
+		&-descr
+			padding-left: 0
+			margin: 0
+			&__title				
+				// width: 100%
+				// text-align: center
+				// margin: 0 -100px	
+				display: none
+				margin-left: 0	
+				&-mob
+					display: block
+					text-align: center
+			&__text
+				text-align: justify
+				text-align-last: center
+	.clients
+		padding: 50px 0 50px 0
+		&-block
+			flex-flow: row wrap
+			justify-content: center
+			& div:nth-child(even)
+				margin-right: 0
+			&__img
+				margin-bottom: 10px
+				margin-right: 10px
+				display: flex
+				justify-content: center
+				align-items: center
+				flex-basis: 49%
+				img
+					min-width: 100%
+				&-1
+					filter: grayscale(0%)
+				&-2
+					filter: grayscale(0%)
+				&-3
+					filter: grayscale(0%)
+				&-4
+					filter: grayscale(0%)
+				&-5
+					filter: grayscale(0%)
+				&-6
+					filter: grayscale(0%)
+				&-7
+					filter: grayscale(0%)
+				&-8
+					filter: grayscale(0%)
+				&-9
+					filter: grayscale(0%)
+				&-10
+					filter: grayscale(0%)
+				&-11
+					filter: grayscale(0%)
+				&-12
+					filter: grayscale(0%)
+	.overlay 
+		.popup
+			top: 5%
+			width: 85%
+			&-title
+				font-size: 14px
+			&-form
+				padding: 10px
+				&-header
+					font-size: 20px
+					span
+						display: block
+						font-size: 16px
+				&__label
+					display: block
+					margin-top: 10px
+				&__input
+					width: 70%
+					margin-bottom: 10px
+					padding: 21px 0
+					&::placeholder
+						text-align: center
+				&__btn
+					margin-left: 0
+
+	.fixed-mobile
+		position: fixed
+		top: 0
+		width: 100%
+		z-index: 200
+		background-color: #fff
+	.top-nav
+		display: none
+		padding: 15px 0
+		background-color: $text-color-dark
+		height: calc(100vh - 95px)
+		width: 100%
+	 margin: 0
+	 position: fixed
+	 top: 95px
+	 width: 100%
+		&__list
+			display: flex
+			justify-content: center
+			align-items: center
+			flex-flow: column wrap
+			margin: 0
+			padding: 25px 0
+		&__item
+			border-right: none
+			padding-right: 0
+			list-style: none
+			margin-bottom: 10px
+			width: 100%
+			text-align: center
+			&:hover
+				background-color: rgba(#fff, 0.3)
+			a
+				color: $text-color-light
+				text-decoration: none
+				text-transform: uppercase
+				font-size: 12px
+				font-weight: 400
+				transition: all 0.5s
+				&:hover
+					color: $active-color
+	.contacts-block
+		position: relative
+		width: 100%
+		top: 0
+		left: 0
+		border: none
+		text-align: center
+		padding: 36px 0 28px 0
+		&__title
+			margin-bottom: 10px
+		& .section-title
+			display: block
+			font-size: 22px
+			font-weight: 700
+			margin-top: 0
+			margin-bottom: 19px
+			&::after
+				display: none
+		&__address
+			margin-bottom: 22px
+		&__email
+			margin-top: 21px
+			& .contacts-block__text
+				margin-bottom: 0
+		&__address, &__tel, &__email
+			&:before
+				display: none
+	#map
+		height: 420px
+		padding: 0 15px 14px 15px
+
+@media (min-width: 779px) and (max-width: 992px)
+	.fixed-mobile
+		position: fixed
+		top: 0
+		width: 100%
+		z-index: 200
+		background-color: #fff
+	.top-nav
+		display: none
+		padding: 15px 0
+		background-color: $text-color-dark
+		height: calc(100vh - 91px)
+		width: 100%
+	 margin: 0
+	 position: fixed
+		top: 91px
+	 width: 100%
+		&__list
+			display: flex
+			justify-content: center
+			align-items: center
+			flex-flow: column wrap
+			margin: 0
+			padding: 25px 0
+		&__item
+			border-right: none
+			padding-right: 0
+			list-style: none
+			margin-bottom: 10px
+			width: 100%
+			text-align: center
+			&:hover
+				background-color: rgba(#fff, 0.3)
+			a
+				color: $text-color-light
+				text-decoration: none
+				text-transform: uppercase
+				font-size: 12px
+				font-weight: 400
+				transition: all 0.5s
+				&:hover
+					color: $active-color
+	.mobile-nav
+		margin-top: 10px
+	.hide-mobile
+		display: none!important
+	.feedback
+		&-slider
+			width: 100%
+	.header
+		&-logo
+			margin-left: 50px
+		margin-top: 0
+		&-contacts
+			&__phone
+				font-size: 20px
+	.main
+		text-align: center
+		&-slide-1
+			margin-top: 50px
+			padding: 20px 0 35px 0
+		&-slide-2
+			margin-top: 50px
+			padding: 20px 0 35px 0
+		&-text
+			padding: 10px
+			width: 90%
+			margin: 0 auto
+			&__form
+				text-align: center
+				padding: 10px
+	.form
+		justify-content: center
+		&-title
+			padding: 15px
+			font-size: 20px
+			font-weight: 300
+			line-height: 20px
+			&__important
+				margin-top: 30px
+		&-small
+			margin-left: 0
+	.numbers
+		&-block
+			&__title
+				font-size: 28px
+	.advantages
+		&-row
+			margin: 0 auto
+			& div:nth-child(even)
+				margin-right: 0
+			& div:nth-child(3)
+				margin-right: 10px
+		&-block
+			min-height: 150px
+			width: 48.9%
+			margin-bottom: 10px
+			margin-right: 10px
+	.products
+		&-block
+			margin-bottom: 10px
+			&__img
+				img
+					max-width: 90%
+			&__title
+				&-last
+					margin-bottom: 58px
+					margin-top: 25px
+				font-size: 22px
+				text-align: center
+	.production
+		padding-top: 25px
+		padding-bottom: 25px
+		text-align: center
+		& .container-fluid
+			padding: 0
+		&-descr
+			padding-left: 0
+			margin: 0
+			overflow-x: hidden
+			&__title				
+				display: none
+				margin: 0		
+				&-mob
+					display: block
+					text-align: center	
+			&__text
+				padding: 0 45px
+				text-align: justify
+				text-align-last: center
+	.clients
+		padding: 70px 0 70px 0
+		&-block
+			flex-flow: row wrap
+			justify-content: center
+			& div:nth-child(4n+4)
+				margin-right: 10px
+			& div:nth-child(3n+3)
+				margin-right: 0
+			&__img
+				margin-bottom: 10px
+				margin-right: 10px
+				display: flex
+				justify-content: center
+				align-items: center
+				flex-basis: 30%
+	.contacts-block
+		position: relative
+		width: 100%
+		top: 0
+		left: 0
+		border: none
+		text-align: center
+		padding: 36px 0 28px 0
+		& .section-title
+			display: block
+			font-size: 22px
+			font-weight: 700
+			margin-top: 0
+			margin-bottom: 19px
+			&::after
+				display: none
+		&__address
+			margin-bottom: 32px
+		&__email
+			margin-top: 21px
+			& .contacts-block__text
+				margin-bottom: 0
+		&__address, &__tel, &__email
+			&:before
+				display: none
+	#map
+		height: 420px
+		padding: 0 15px 14px 15px
+@media (min-width: 993px) and (max-width: 1200px)
+	.hide-desc
+		display: none!important
+	.top-nav
+		display: block
+	.contacts
+		& .section-title
+			&::after
+				display: none
+	.mobile-nav
+		display: none
+	.main
+		&-img::before
+			width: 320px
+			height: 320px
+			margin-left: -145px
+		&-slide-1
+			padding: 15px 0 35px 0
+		&-slide-2
+			padding: 15px 0 35px 0
+		&-text
+			padding: 20px
+			width: 90%
+			margin: 0 auto
+			&__title
+				font-size: 32px
+			&__form
+				padding: 10px	
+	.form
+		justify-content: center
+		&-title
+			padding: 0 15px
+	.advantages
+		&-row 
+			& div:nth-child(3n+3)
+				margin-right: 0
+		&-block
+			min-height: 150px
+			width: 31.6%
+	.production
+		padding: 85px 0 0 0
+		&-descr
+			padding-left: 0
+			overflow-x: hidden
+			margin-left: -30px
+			&__title				
+				width: 500px
+				margin: 0 auto
+				&-mob
+					display: none
+			&__text
+				margin-left: 25px
+	.products
+		padding: 25px 0
+		&-block
+			&__img
+				img
+					max-width: 90%
+			&__title
+				text-align: center
+	.clients
+		padding: 70px 0 70px 0
+		&-block
+			display: flex
+			flex-flow: row wrap
+			justify-content: space-between
+			align-items: center
+			& div:nth-child(4n+4)
+				margin-right: 0
+			&__img
+    margin-right: 0
+ .feedback
+ 	padding-top: 25px
+ 	padding-bottom: 25px
+	.top-nav
+		&__item
+			padding-right: 1.5%
+@media (min-width: 1200px)
+	.top-nav
+		display: block
+	.mobile-nav
+		display: none
+	.hide-desc
+		display: none!important
+@media (max-width: 320px)
+	.products-block__buttons .button 
+  font-size: 12px

@@ -1,0 +1,57 @@
+.production
+	padding:
+		top: 85px
+	&-slider
+		&_top
+			margin-bottom: 13px
+		&_bottom
+			img
+				margin: 0 3px
+		&__mobile
+			&-img
+				height: 380px!important
+			&-img-1
+				background: #fff url(../img/production/1.jpg) center no-repeat
+			&-img-2
+				background: #fff url(../img/production/2.jpg) center no-repeat			
+			&-img-3
+				background: #fff url(../img/production/3.jpg) center no-repeat			
+			&-img-4
+				background: #fff url(../img/production/4.jpg) center no-repeat			
+			&-img-5
+				background: #fff url(../img/production/5.jpg) center no-repeat				
+	&-descr
+		margin-left: -5px
+		&__title
+			background-color: $active-color
+			color: $text-color-light
+			margin-left: -25px
+			margin-top: 20px
+			line-height: 22px
+			&-mob
+				display: none
+			h2
+				padding: 20px 30px
+				color: $text-color-light
+				font-size: 28px
+				font-weight: 400
+		&__text
+			color: $text-color-dark
+			font-size: 16px
+			font-weight: 300
+			text-align: justify
+			padding-right: 5px
+.slider-mob
+	z-index: 100
+	position: absolute
+	display: block
+	width: 22px
+	height: 80px
+	cursor: pointer
+	top: calc(380px / 2 - 40px)
+	&_left
+		left: 0
+		background: $active-color url('../img/ar-left.png') center no-repeat
+	&_right
+		right: 0
+		background: $active-color url('../img/ar-right.png') center no-repeat

@@ -1,0 +1,238 @@
+.section-title
+		color: #313131
+		font-size: 27px
+		font-weight: 700
+		text-transform: uppercase
+		text-align: center
+		margin-bottom: 30px
+		&::after
+			content: ''
+			background: url(../img/line.png) center no-repeat
+			display: block
+			height: 6px
+			margin-top: 12px
+.button
+	font-size: 14px
+	color: $text-color-light
+	border: 1px solid transparent
+	background-color: $active-color
+	padding: 13px 22px
+	border-radius: 5px
+	font:
+		family: 'Roboto' , sans-serif
+		weight: 400
+	transition: all 1.7s
+	&:hover
+		background-color: lighten($active-color, 17)
+		cursor: pointer
+		transition: all 2s
+	&_big
+		padding-top: 18px
+		padding-bottom: 18px
+		vertical-align: middle
+		font-size: 15px
+	&-o
+		background-color: #fff
+		border: 1px solid rgba($text-color-dark, 0.5)
+		color: $text-color-dark
+    background-color: $active-color
+		font-size: 15px
+		opacity: 0.5
+		&:hover
+			color: $text-color-light
+			border: 1px solid transparent
+			opacity: 1
+	img
+		vertical-align: middle
+.moveup
+	animation: moveup 1s
+	animation-delay: 0.4s
+	transition: all 0.6s linear
+.slider-prod-arrow
+	z-index: 100
+	position: absolute
+	display: block
+	width: 22px
+	height: 100%
+	border: 1px solid $active-color
+	cursor: pointer
+	&_left
+		left: 0
+		top: 0
+		background: #fff url('../img/arrow_left.png') center no-repeat
+		&:hover
+			background: $active-color url('../img/arrow-act_left.png') center no-repeat
+	&_right
+    top: 0
+    right: 0
+    background: #fff url('../img/arrow_right.png') center no-repeat
+    &:hover
+      background: $active-color url('../img/arrow-act_right.png') center no-repeat
+.slider-fb-arrow
+	z-index: 100
+	position: absolute
+	display: block
+	width: 22px
+	height: 47px
+	cursor: pointer
+	top: 50%
+	&_left
+		left: -10px
+		background: #f4f4f4 url('../img/arrow_left_big.png') center no-repeat
+		&:hover
+			background: $active-color url('../img/arrow-act_left_big.png') center no-repeat
+	&_right
+		right: -10px
+		background: url('../img/arrow_right_big.png') center no-repeat
+		&:hover
+			background: $active-color url('../img/arrow-act_right_big.png') center no-repeat
+.slick-slide
+ &:focus, a
+	 outline: none
+.slick-slide
+	filter: grayscale(100%)
+.slick-center, .slick-current
+	filter: grayscale(0%)
+.slick-prev, .slick-next
+  position: absolute
+  display: block
+  width: 60px
+  height: 100px
+  cursor: pointer
+  background: transparent
+  top: 50%
+  margin-top: -45px
+  font-size: 0
+  border: none
+  z-index: 2
+
+.slick-prev:before, .slick-next:before, .slick-prev:after, .slick-next:after
+  content: ''
+  position: absolute
+  background: #fff
+  height: 2px
+  width: 50px
+  top: 50%
+  left: 5px
+  -webkit-transition: all 0.2s ease-in-out
+  transition: all 0.2s ease-in-out
+
+.slick-prev:before, .slick-next:before
+  margin-top: -22px
+
+.slick-prev:after, .slick-next:after
+  margin-top: 22px
+
+.slick-prev:hover:before, .slick-next:hover:before
+  margin-top: -18px
+
+.slick-prev:hover:after, .slick-next:hover:after
+  margin-top: 18px
+
+.slick-prev
+  left: 10px
+  &:before
+    -webkit-transform: rotate(-60deg)
+    -ms-transform: rotate(-60deg)
+    transform: rotate(-60deg)
+  &:after
+    -webkit-transform: rotate(60deg)
+    -ms-transform: rotate(60deg)
+    transform: rotate(60deg)
+  &:hover
+    &:before
+      -webkit-transform: rotate(-45deg)
+      -ms-transform: rotate(-45deg)
+      transform: rotate(-45deg)
+    &:after
+      -webkit-transform: rotate(45deg)
+      -ms-transform: rotate(45deg)
+      transform: rotate(45deg)
+
+.slick-next
+  right: 10px
+  &:before
+    -webkit-transform: rotate(60deg)
+    -ms-transform: rotate(60deg)
+    transform: rotate(60deg)
+  &:after
+    -webkit-transform: rotate(-60deg)
+    -ms-transform: rotate(-60deg)
+    transform: rotate(-60deg)
+  &:hover
+    &:before
+      -webkit-transform: rotate(45deg)
+      -ms-transform: rotate(45deg)
+      transform: rotate(45deg)
+    &:after
+      -webkit-transform: rotate(-45deg)
+      -ms-transform: rotate(-45deg)
+      transform: rotate(-45deg)
+
+.ct-slick-arrows--type2
+  .slick-prev, .slick-next
+    filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=85)
+    -webkit-transition: all 250ms ease-in-out
+    transition: all 250ms ease-in-out
+  .slick-prev:before, .slick-next:before, .slick-prev:after, .slick-next:after
+    background-color: #fff
+    height: 15px
+    width: 70px
+  .slick-prev:before, .slick-next:before
+    margin-top: -20px
+  .slick-prev:after, .slick-next:after
+    margin-top: 20px
+  .slick-prev:hover:before, .slick-next:hover:before
+    margin-top: -20px
+  .slick-prev:hover:after, .slick-next:hover:after
+    margin-top: 20px
+  .slick-prev:hover:active, .slick-next:hover:active
+    opacity: 1
+    filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100)
+  .slick-prev
+    left: 10px
+    &:before
+      -webkit-transform: rotate(-45deg)
+      -ms-transform: rotate(-45deg)
+      transform: rotate(-45deg)
+    &:after
+      -webkit-transform: rotate(45deg)
+      -ms-transform: rotate(45deg)
+      transform: rotate(45deg)
+    &:hover
+      &:before
+        margin-top: -27px
+        margin-top: -2.7rem
+        -webkit-transform: rotate(-60deg)
+        -ms-transform: rotate(-60deg)
+        transform: rotate(-60deg)
+      &:after
+        margin-top: 27px
+        margin-top: 2.7rem
+        -webkit-transform: rotate(60deg)
+        -ms-transform: rotate(60deg)
+        transform: rotate(60deg)
+  .slick-next
+    right: 10px
+    &:before, &:after
+      left: auto
+      right: 0
+    &:before
+      -webkit-transform: rotate(45deg)
+      -ms-transform: rotate(45deg)
+      transform: rotate(45deg)
+    &:after
+      -webkit-transform: rotate(-45deg)
+      -ms-transform: rotate(-45deg)
+      transform: rotate(-45deg)
+    &:hover
+      &:before
+        margin-top: -27px
+        -webkit-transform: rotate(60deg)
+        -ms-transform: rotate(60deg)
+        transform: rotate(60deg)
+      &:after
+        margin-top: 27px
+        -webkit-transform: rotate(-60deg)
+        -ms-transform: rotate(-60deg)
+        transform: rotate(-60deg)

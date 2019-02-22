@@ -1,0 +1,62 @@
+.top-nav
+	background-color: $text-color-dark	
+	height: 45px
+ margin: 0
+ position: fixed
+ top: 0
+ z-index: 150
+ width: 100%
+ line-height: 45px
+	&__list
+		display: flex
+		justify-content: space-between
+		margin: 0
+	&__item
+		border-right: 1px dotted rgba(255,255,255,0.2)
+		padding-right: 2.2%
+		list-style: none
+		&:last-child
+			border-right: none
+		a
+			color: $text-color-light
+			text-decoration: none
+			text-transform: uppercase
+			font-size: 12px
+			font-weight: 400
+			transition: all 0.5s
+			&:hover
+				color: $active-color
+.mobile-nav
+	display: block
+	width: 35px
+	height: 35px
+	position: absolute
+	span, span:after, span:before
+		display: block
+		height: 2px
+		width: 18px
+		background-color: #000
+		position: absolute
+		left: 50%
+		margin-left: -9px
+		top: 50%
+		margin-top: -1px
+		border-radius: 50%
+	& span:after
+		content: ''
+		margin-top: 5px
+		transition: all 0.5s
+	& span:before
+		content: ''
+		margin-top: -6px
+		transition: all 0.5s
+	&_active
+		span
+			background-color: #fff
+			&:before
+				transform: rotate(135deg)
+				margin-top: 0
+			&:after
+				transform: rotate(-135deg)
+				margin-top: 0
+
